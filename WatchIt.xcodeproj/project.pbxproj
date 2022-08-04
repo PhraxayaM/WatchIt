@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34C0BA5B35F166C9AE64CE35 /* Pods_WatchIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B029AAD7981E3E93BBE5CD /* Pods_WatchIt.framework */; };
+		CD8036F7289B386B00BD5ABB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD8036F6289B386B00BD5ABB /* GoogleService-Info.plist */; };
 		CD80F05F289B080C0091F910 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD80F05E289B080C0091F910 /* AppDelegate.swift */; };
 		CD80F061289B080C0091F910 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD80F060289B080C0091F910 /* SceneDelegate.swift */; };
-		CD80F063289B080C0091F910 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD80F062289B080C0091F910 /* ViewController.swift */; };
+		CD80F063289B080C0091F910 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD80F062289B080C0091F910 /* HomeViewController.swift */; };
 		CD80F066289B080C0091F910 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD80F064289B080C0091F910 /* Main.storyboard */; };
 		CD80F068289B08110091F910 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD80F067289B08110091F910 /* Assets.xcassets */; };
 		CD80F06B289B08110091F910 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD80F069289B08110091F910 /* LaunchScreen.storyboard */; };
+		CD91FB5F289B53F60014A282 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91FB5E289B53F60014A282 /* ExploreViewController.swift */; };
+		CD91FB61289B54040014A282 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91FB60289B54040014A282 /* ProfileViewController.swift */; };
+		CD91FB63289B54520014A282 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91FB62289B54520014A282 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39EEB15EA64A2FC8C0531EF8 /* Pods-WatchIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchIt.debug.xcconfig"; path = "Target Support Files/Pods-WatchIt/Pods-WatchIt.debug.xcconfig"; sourceTree = "<group>"; };
+		CD8036F6289B386B00BD5ABB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CD80F05B289B080C0091F910 /* WatchIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD80F05E289B080C0091F910 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD80F060289B080C0091F910 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CD80F062289B080C0091F910 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD80F062289B080C0091F910 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CD80F065289B080C0091F910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD80F067289B08110091F910 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD80F06A289B08110091F910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD80F06C289B08110091F910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD91FB5E289B53F60014A282 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		CD91FB60289B54040014A282 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CD91FB62289B54520014A282 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		DE2887404513DCDC12C2F490 /* Pods-WatchIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchIt.release.xcconfig"; path = "Target Support Files/Pods-WatchIt/Pods-WatchIt.release.xcconfig"; sourceTree = "<group>"; };
+		F6B029AAD7981E3E93BBE5CD /* Pods_WatchIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34C0BA5B35F166C9AE64CE35 /* Pods_WatchIt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ABCB2B44A5CD3BAF0AF51018 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6B029AAD7981E3E93BBE5CD /* Pods_WatchIt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD8036F1289B358800BD5ABB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD80F062289B080C0091F910 /* HomeViewController.swift */,
+				CD91FB5E289B53F60014A282 /* ExploreViewController.swift */,
+				CD91FB60289B54040014A282 /* ProfileViewController.swift */,
+				CD91FB62289B54520014A282 /* TabBarViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CD8036F2289B358D00BD5ABB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD8036F6289B386B00BD5ABB /* GoogleService-Info.plist */,
+				CD80F067289B08110091F910 /* Assets.xcassets */,
+				CD80F05E289B080C0091F910 /* AppDelegate.swift */,
+				CD80F060289B080C0091F910 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD8036F3289B35EA00BD5ABB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD8036F4289B35F500BD5ABB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD8036F5289B35FB00BD5ABB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD80F064289B080C0091F910 /* Main.storyboard */,
+				CD80F069289B08110091F910 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CD80F052289B080C0091F910 = {
 			isa = PBXGroup;
 			children = (
 				CD80F05D289B080C0091F910 /* WatchIt */,
 				CD80F05C289B080C0091F910 /* Products */,
+				F4EFC128625FAB82DAF17779 /* Pods */,
+				ABCB2B44A5CD3BAF0AF51018 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +124,23 @@
 		CD80F05D289B080C0091F910 /* WatchIt */ = {
 			isa = PBXGroup;
 			children = (
-				CD80F05E289B080C0091F910 /* AppDelegate.swift */,
-				CD80F060289B080C0091F910 /* SceneDelegate.swift */,
-				CD80F062289B080C0091F910 /* ViewController.swift */,
-				CD80F064289B080C0091F910 /* Main.storyboard */,
-				CD80F067289B08110091F910 /* Assets.xcassets */,
-				CD80F069289B08110091F910 /* LaunchScreen.storyboard */,
 				CD80F06C289B08110091F910 /* Info.plist */,
+				CD8036F2289B358D00BD5ABB /* Resources */,
+				CD8036F5289B35FB00BD5ABB /* Views */,
+				CD8036F4289B35F500BD5ABB /* ViewModel */,
+				CD8036F3289B35EA00BD5ABB /* Models */,
+				CD8036F1289B358800BD5ABB /* Controllers */,
 			);
 			path = WatchIt;
+			sourceTree = "<group>";
+		};
+		F4EFC128625FAB82DAF17779 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39EEB15EA64A2FC8C0531EF8 /* Pods-WatchIt.debug.xcconfig */,
+				DE2887404513DCDC12C2F490 /* Pods-WatchIt.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD80F06F289B08110091F910 /* Build configuration list for PBXNativeTarget "WatchIt" */;
 			buildPhases = (
+				ADB903E93303DF087972151C /* [CP] Check Pods Manifest.lock */,
 				CD80F057289B080C0091F910 /* Sources */,
 				CD80F058289B080C0091F910 /* Frameworks */,
 				CD80F059289B080C0091F910 /* Resources */,
+				6503A745E9B18E225A841EC8 /* [CP] Embed Pods Frameworks */,
+				CD42C6A9289B3F8D00D58C7B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -126,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD80F06B289B08110091F910 /* LaunchScreen.storyboard in Resources */,
+				CD8036F7289B386B00BD5ABB /* GoogleService-Info.plist in Resources */,
 				CD80F068289B08110091F910 /* Assets.xcassets in Resources */,
 				CD80F066289B080C0091F910 /* Main.storyboard in Resources */,
 			);
@@ -133,12 +213,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6503A745E9B18E225A841EC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchIt/Pods-WatchIt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchIt/Pods-WatchIt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatchIt/Pods-WatchIt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADB903E93303DF087972151C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchIt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD42C6A9289B3F8D00D58C7B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)\n",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "./Pods/CrashlyticsFramework/Crashlytics.framework/run\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD80F057289B080C0091F910 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD80F063289B080C0091F910 /* ViewController.swift in Sources */,
+				CD91FB63289B54520014A282 /* TabBarViewController.swift in Sources */,
+				CD91FB5F289B53F60014A282 /* ExploreViewController.swift in Sources */,
+				CD80F063289B080C0091F910 /* HomeViewController.swift in Sources */,
+				CD91FB61289B54040014A282 /* ProfileViewController.swift in Sources */,
 				CD80F05F289B080C0091F910 /* AppDelegate.swift in Sources */,
 				CD80F061289B080C0091F910 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,17 +426,19 @@
 		};
 		CD80F070289B08110091F910 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39EEB15EA64A2FC8C0531EF8 /* Pods-WatchIt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = P2956JDDUT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WatchIt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,23 +450,25 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CD80F071289B08110091F910 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE2887404513DCDC12C2F490 /* Pods-WatchIt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = P2956JDDUT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WatchIt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +480,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
