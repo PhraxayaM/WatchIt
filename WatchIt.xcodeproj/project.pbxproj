@@ -18,6 +18,8 @@
 		CD91FB5F289B53F60014A282 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91FB5E289B53F60014A282 /* ExploreViewController.swift */; };
 		CD91FB61289B54040014A282 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91FB60289B54040014A282 /* ProfileViewController.swift */; };
 		CD91FB63289B54520014A282 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91FB62289B54520014A282 /* TabBarViewController.swift */; };
+		CD91FB66289B7BEC0014A282 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91FB65289B7BEC0014A282 /* APICaller.swift */; };
+		CD91FB68289B95250014A282 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91FB67289B95250014A282 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		CD91FB5E289B53F60014A282 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		CD91FB60289B54040014A282 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CD91FB62289B54520014A282 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		CD91FB65289B7BEC0014A282 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		CD91FB67289B95250014A282 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		DE2887404513DCDC12C2F490 /* Pods-WatchIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchIt.release.xcconfig"; path = "Target Support Files/Pods-WatchIt/Pods-WatchIt.release.xcconfig"; sourceTree = "<group>"; };
 		F6B029AAD7981E3E93BBE5CD /* Pods_WatchIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,6 +80,7 @@
 				CD80F067289B08110091F910 /* Assets.xcassets */,
 				CD80F05E289B080C0091F910 /* AppDelegate.swift */,
 				CD80F060289B080C0091F910 /* SceneDelegate.swift */,
+				CD91FB67289B95250014A282 /* API.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -129,9 +134,18 @@
 				CD8036F5289B35FB00BD5ABB /* Views */,
 				CD8036F4289B35F500BD5ABB /* ViewModel */,
 				CD8036F3289B35EA00BD5ABB /* Models */,
+				CD91FB64289B7BCF0014A282 /* Managers */,
 				CD8036F1289B358800BD5ABB /* Controllers */,
 			);
 			path = WatchIt;
+			sourceTree = "<group>";
+		};
+		CD91FB64289B7BCF0014A282 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CD91FB65289B7BEC0014A282 /* APICaller.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		F4EFC128625FAB82DAF17779 /* Pods */ = {
@@ -282,8 +296,10 @@
 				CD91FB63289B54520014A282 /* TabBarViewController.swift in Sources */,
 				CD91FB5F289B53F60014A282 /* ExploreViewController.swift in Sources */,
 				CD80F063289B080C0091F910 /* HomeViewController.swift in Sources */,
+				CD91FB66289B7BEC0014A282 /* APICaller.swift in Sources */,
 				CD91FB61289B54040014A282 /* ProfileViewController.swift in Sources */,
 				CD80F05F289B080C0091F910 /* AppDelegate.swift in Sources */,
+				CD91FB68289B95250014A282 /* API.swift in Sources */,
 				CD80F061289B080C0091F910 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
