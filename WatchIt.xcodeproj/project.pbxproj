@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		34C0BA5B35F166C9AE64CE35 /* Pods_WatchIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B029AAD7981E3E93BBE5CD /* Pods_WatchIt.framework */; };
-		CD8036F7289B386B00BD5ABB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD8036F6289B386B00BD5ABB /* GoogleService-Info.plist */; };
 		CD80F05F289B080C0091F910 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD80F05E289B080C0091F910 /* AppDelegate.swift */; };
 		CD80F061289B080C0091F910 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD80F060289B080C0091F910 /* SceneDelegate.swift */; };
 		CD80F063289B080C0091F910 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD80F062289B080C0091F910 /* HomeViewController.swift */; };
@@ -20,11 +19,11 @@
 		CD91FB63289B54520014A282 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91FB62289B54520014A282 /* TabBarViewController.swift */; };
 		CD91FB66289B7BEC0014A282 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91FB65289B7BEC0014A282 /* APICaller.swift */; };
 		CD91FB68289B95250014A282 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91FB67289B95250014A282 /* API.swift */; };
+		CD91FB6A289B9A780014A282 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD91FB69289B9A780014A282 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		39EEB15EA64A2FC8C0531EF8 /* Pods-WatchIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchIt.debug.xcconfig"; path = "Target Support Files/Pods-WatchIt/Pods-WatchIt.debug.xcconfig"; sourceTree = "<group>"; };
-		CD8036F6289B386B00BD5ABB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CD80F05B289B080C0091F910 /* WatchIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD80F05E289B080C0091F910 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD80F060289B080C0091F910 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		CD91FB62289B54520014A282 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		CD91FB65289B7BEC0014A282 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		CD91FB67289B95250014A282 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		CD91FB69289B9A780014A282 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DE2887404513DCDC12C2F490 /* Pods-WatchIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchIt.release.xcconfig"; path = "Target Support Files/Pods-WatchIt/Pods-WatchIt.release.xcconfig"; sourceTree = "<group>"; };
 		F6B029AAD7981E3E93BBE5CD /* Pods_WatchIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,7 +76,7 @@
 		CD8036F2289B358D00BD5ABB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CD8036F6289B386B00BD5ABB /* GoogleService-Info.plist */,
+				CD91FB69289B9A780014A282 /* GoogleService-Info.plist */,
 				CD80F067289B08110091F910 /* Assets.xcassets */,
 				CD80F05E289B080C0091F910 /* AppDelegate.swift */,
 				CD80F060289B080C0091F910 /* SceneDelegate.swift */,
@@ -219,7 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD80F06B289B08110091F910 /* LaunchScreen.storyboard in Resources */,
-				CD8036F7289B386B00BD5ABB /* GoogleService-Info.plist in Resources */,
+				CD91FB6A289B9A780014A282 /* GoogleService-Info.plist in Resources */,
 				CD80F068289B08110091F910 /* Assets.xcassets in Resources */,
 				CD80F066289B080C0091F910 /* Main.storyboard in Resources */,
 			);
