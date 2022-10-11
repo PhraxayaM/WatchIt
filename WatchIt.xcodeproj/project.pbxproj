@@ -14,6 +14,13 @@
 		CD80F066289B080C0091F910 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD80F064289B080C0091F910 /* Main.storyboard */; };
 		CD80F068289B08110091F910 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD80F067289B08110091F910 /* Assets.xcassets */; };
 		CD80F06B289B08110091F910 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD80F069289B08110091F910 /* LaunchScreen.storyboard */; };
+		CD88DCAA289C790B0025BCEE /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88DCA9289C790B0025BCEE /* DatabaseManager.swift */; };
+		CD88DCAE289C7A8D0025BCEE /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88DCAD289C7A8D0025BCEE /* AuthManager.swift */; };
+		CD88DCB1289CA4FD0025BCEE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88DCB0289CA4FD0025BCEE /* Extensions.swift */; };
+		CD88DCB328D54DF70025BCEE /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88DCB228D54DF70025BCEE /* SearchResponse.swift */; };
+		CD88DCB528D6D6990025BCEE /* ExploreSectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88DCB428D6D6980025BCEE /* ExploreSectionType.swift */; };
+		CD88DCB728D6D7750025BCEE /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88DCB628D6D7750025BCEE /* ExploreCell.swift */; };
+		CD88DCB928D6D78E0025BCEE /* ExploreSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88DCB828D6D78E0025BCEE /* ExploreSection.swift */; };
 		CD91FB5F289B53F60014A282 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91FB5E289B53F60014A282 /* ExploreViewController.swift */; };
 		CD91FB61289B54040014A282 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91FB60289B54040014A282 /* ProfileViewController.swift */; };
 		CD91FB63289B54520014A282 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91FB62289B54520014A282 /* TabBarViewController.swift */; };
@@ -32,6 +39,13 @@
 		CD80F067289B08110091F910 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD80F06A289B08110091F910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD80F06C289B08110091F910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD88DCA9289C790B0025BCEE /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		CD88DCAD289C7A8D0025BCEE /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		CD88DCB0289CA4FD0025BCEE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CD88DCB228D54DF70025BCEE /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		CD88DCB428D6D6980025BCEE /* ExploreSectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSectionType.swift; sourceTree = "<group>"; };
+		CD88DCB628D6D7750025BCEE /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
+		CD88DCB828D6D78E0025BCEE /* ExploreSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSection.swift; sourceTree = "<group>"; };
 		CD91FB5E289B53F60014A282 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		CD91FB60289B54040014A282 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CD91FB62289B54520014A282 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +93,7 @@
 				CD91FB69289B9A780014A282 /* GoogleService-Info.plist */,
 				CD80F067289B08110091F910 /* Assets.xcassets */,
 				CD80F05E289B080C0091F910 /* AppDelegate.swift */,
+				CD88DCB0289CA4FD0025BCEE /* Extensions.swift */,
 				CD80F060289B080C0091F910 /* SceneDelegate.swift */,
 				CD91FB67289B95250014A282 /* API.swift */,
 			);
@@ -88,6 +103,10 @@
 		CD8036F3289B35EA00BD5ABB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CD88DCB428D6D6980025BCEE /* ExploreSectionType.swift */,
+				CD88DCB228D54DF70025BCEE /* SearchResponse.swift */,
+				CD88DCB628D6D7750025BCEE /* ExploreCell.swift */,
+				CD88DCB828D6D78E0025BCEE /* ExploreSection.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -144,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				CD91FB65289B7BEC0014A282 /* APICaller.swift */,
+				CD88DCAD289C7A8D0025BCEE /* AuthManager.swift */,
+				CD88DCA9289C790B0025BCEE /* DatabaseManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -299,8 +320,15 @@
 				CD91FB66289B7BEC0014A282 /* APICaller.swift in Sources */,
 				CD91FB61289B54040014A282 /* ProfileViewController.swift in Sources */,
 				CD80F05F289B080C0091F910 /* AppDelegate.swift in Sources */,
+				CD88DCB928D6D78E0025BCEE /* ExploreSection.swift in Sources */,
 				CD91FB68289B95250014A282 /* API.swift in Sources */,
+				CD88DCAE289C7A8D0025BCEE /* AuthManager.swift in Sources */,
+				CD88DCB328D54DF70025BCEE /* SearchResponse.swift in Sources */,
 				CD80F061289B080C0091F910 /* SceneDelegate.swift in Sources */,
+				CD88DCB1289CA4FD0025BCEE /* Extensions.swift in Sources */,
+				CD88DCAA289C790B0025BCEE /* DatabaseManager.swift in Sources */,
+				CD88DCB528D6D6990025BCEE /* ExploreSectionType.swift in Sources */,
+				CD88DCB728D6D7750025BCEE /* ExploreCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

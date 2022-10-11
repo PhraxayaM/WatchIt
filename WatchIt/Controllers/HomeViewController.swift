@@ -8,22 +8,67 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    private let HorizontalScrollView:  UIScrollView = {
+        let scrollView = UIScrollView()
+        scrollView.backgroundColor = .brown
+        scrollView.isPagingEnabled = true
+        return scrollView
+    }()
 
+    let pageController:UIPageViewController =  {
+        UIPageViewController(transitionStyle: .scroll,
+                                              navigationOrientation: .vertical,
+                                              options: [:])
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .yellow
-        let button = UIButton(type: .roundedRect)
-             button.frame = CGRect(x: 20, y: 50, width: 100, height: 30)
-             button.setTitle("Test Crash", for: [])
-             button.addTarget(self, action: #selector(self.crashButtonTapped(_:)), for: .touchUpInside)
-             view.addSubview(button)
+        view.addSubview(HorizontalScrollView)
+        setupForYouMoviePosts()
     }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        HorizontalScrollView.frame = view.bounds
+    }
+    
+    private func setupForYouMoviePosts() {
+        HorizontalScrollView.contentSize = CGSize(width: view.width * 2, height: view.height * 2)
+        let vc = UIViewController()
+        vc.view.backgroundColor = .purple
+        
+        
+        
+        pageController.setViewControllers([vc],
+                                          direction: .forward,
+                                          animated: false,
+                                          completion: nil
+        )
+        pageController.dataSource = self
+        
+        HorizontalScrollView.addSubview(pageController.view)
+        pageController.view.frame = view.bounds
+        addChild(pageController)
+        pageController.didMove(toParent: self)
+    }
+    
 
-    @objc func crashButtonTapped(_ sender: AnyObject) {
-         let numbers = [0]
-         let _ = numbers[1]
-     }
+
 
 }
 
+extension HomeViewController: UIPageViewControllerDataSource {
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        return nil
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        let vc = UIViewController()
+        vc.view.backgroundColor = [UIColor.red, UIColor.blue, UIColor.brown].randomElement()
+        return vc
+        
+    }
+}
