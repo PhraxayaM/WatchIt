@@ -9,13 +9,30 @@ import Foundation
 import UIKit
 
 enum ExploreCell {
-    case banner(viewModel: ExploreBannerViewModel)
+    case Top250Movies(viewModel: Top250MoviesViewModel)
+    case MostPopularMovies(viewModel: MostPopularMoviesViewModel)
+    case MostPopularTvShows(viewModel: MostPopularTVShowsViewModel)
     case post(viewModel: String)
     case user(viewModel: ExploreUserViewModel)
 }
 
-struct ExploreBannerViewModel {
+struct Top250MoviesViewModel {
     let thumbnailImage: UIImage?
+    let title: String
+    let description: String
+    let handler: (() -> Void)
+}
+
+struct MostPopularMoviesViewModel {
+    let thumbnailImage: UIImage?
+    let title: String
+    let description: String
+    let handler: (() -> Void)
+}
+
+struct MostPopularTVShowsViewModel {
+    let thumbnailImage: UIImage?
+    let title: String
     let description: String
     let handler: (() -> Void)
 }
